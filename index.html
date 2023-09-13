@@ -8,25 +8,33 @@
 </head>
 <body>
     <header class="wrapper navmenu">
-        <a href="#" class="logo"><span>Web </span>Studio</a>
+        <div class="navobertka">
+            <a href="#" class="logo"><span>Web </span>Studio</a>
         <nav class="nav">
-            <a class="navitem" href="#"><span>Студия</span></a>
+            <a class="navitem active" href="#"><span>Студия</span></a>
             <a class="navitem" href="portfolio.html">Портфолио</a>
             <a class="navitem" href="#">Контакты</a>
-    </nav>
-    <ul class="contacts">
-        <li><a href="#">info@devstudio.com</a></li>
-        <li><a href="#">+38 096 111 11 11</a></li>
-    </ul>
-    <div class="burgermenu"></div>
-</header>
+        </nav>
+        </div>
+        <ul class="contacts">
+            <li><a href="#" class="contactscontacts">
+                <svg class="contactssvg envelopesvg">
+                    <use href="./images/icons.svg#phone"></use>
+                </svg>
+                info@devstudio.com</a></li>
+            <li><a href="#" class="contactscontacts">
+                <svg class="contactssvg phonesvg">
+                    <use href="./images/icons.svg#envelope"></use>
+                </svg>
+                +38 096 111 11 11</a></li>
+        </ul>
+        <div class="burgermenu"></div>
+    </header>
     <main class="hero">
-        <!-- <div class="herocontent"> -->
             <h1 class="herotext">эффективные решения<br> для вашего бизнеса</h1>
         <button type="button" class="button">Заказать услугу</button>
-        <!-- </div> -->
     </main>
-        <div class="wrapper foursvgdiv">
+    <div class="wrapper foursvgdiv">
             <ul class="fourlist">
                 <li>
                     <div class="foursvg">
@@ -73,12 +81,13 @@
                 <li><img src="./images/box3.png" alt="learncolors"></li>
             </ul> 
             </div>
-        </div>
+    </div>
     <div class="wrapper herotwo">
         <h2 class="ourteam">Наша команда</h2>
         <ul class="topfooterdivan">
             <li class="prodamdivan"><img src="./images/men1.jpg" alt="menvochkahone" class="teamimg">
-            <p class="topfooterzaglav">Игорь Демьяненко<br><span>Product Designer</span></p>
+            <p class="topfooterzaglav">Игорь Демьяненко</p>
+                <p class="spantext">Product Designer</p>
             <ul class="socials">
                 <li class="socialitem">
                     <svg class="soci insta">
@@ -103,7 +112,8 @@
             </ul>
             </li>
             <li class="prodamdivan"><img src="./images/womenmoment1.jpg" alt="womenvochkahtwo" class="teamimg">
-            <p class="topfooterzaglav">Ольга Репина<br><span>Frontend Developer</span></p>
+            <p class="topfooterzaglav">Ольга Репина</p>
+            <p class="spantext">Frontend Developer</p>
             <ul class="socials">
                 <li class="socialitem">
                     <svg class="soci insta">
@@ -128,7 +138,8 @@
             </ul>
             </li>
             <li class="prodamdivan"><img src="./images/men2.jpg" alt="menbezochkovone" class="teamimg">
-            <p class="topfooterzaglav">Николай Тарасов<br><span>Marketing</span></p>
+            <p class="topfooterzaglav">Николай Тарасов</p>
+            <p class="spantext">Marketing</p>
             <ul class="socials">
                 <li class="socialitem">
                     <svg class="soci insta">
@@ -153,7 +164,8 @@
             </ul>
             </li>
             <li class="prodamdivan"><img src="./images/men3.jpg" alt="menvochkahtwo" class="teamimg">
-            <p class="topfooterzaglav">Михаил Ермаков<br><span>UI Designer</span></p>
+            <p class="topfooterzaglav">Михаил Ермаков</p>
+            <p class="spantext">UI Designer</p>
             <ul class="socials">
                 <li class="socialitem">
                     <svg class="soci insta">
