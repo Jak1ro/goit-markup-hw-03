@@ -82,6 +82,14 @@ a {
     align-items: center;
     height: 100%;
     color: var(--maintextcolor);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.active {
+    color: var(--bluecolor);
 }
 
 .navitem.active {
@@ -98,6 +106,11 @@ a {
     display: flex;
     align-items: center;
     color: var(--secondtextcolor);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 .contactssvg {
@@ -189,6 +202,15 @@ a {
     padding-top: 60px;
 }
 
+.fourlist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.foursvgitem {
+    width: 100%;
+}
+
 .foursvg {
     background-color: var(--topfooterbg);
     display: flex;
@@ -229,7 +251,6 @@ a {
 
 .herotwo {
     background-color: var(--topfooterbg);
-    max-width: 480px;
 }
 
 .ourteam {
@@ -241,13 +262,17 @@ a {
     padding: 60px 0 30px;
 }
 
+.topfooterdivan {
+    width: 100%;
+}
+
 .prodamdivan {
     width: 100%;
     background-color: var(--whitecolor);
     box-shadow: 0px 2px 1px 0px #00000033;
     box-shadow: 0px 1px 1px 0px #00000024;
     box-shadow: 0px 1px 3px 0px #0000001F;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     border-radius: 0 0 4px 4px;
 }
 
@@ -300,6 +325,80 @@ a {
     height: 20px;
 }
 
+.clientshead {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.clientslist {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clientsitem {
+    height: 90px;
+    width: 210px;
+    border: 1px solid var(--svgcolor);
+    border-radius: 4px;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.clientsitem:hover  {
+    border-color: var(--bluecolor);
+}
+
+.clientssvg {
+    fill: var(--svgcolor);
+    transition: all 0.3s;
+}
+
+.clientssvg:hover {
+    fill: var(--bluecolor);
+}
+
+
+
+.one {
+    width: 44px;
+    height: 49px;
+}
+
+.two {
+    width: 40px;
+    height: 52px;
+}
+
+.three {
+    width: 41px;
+    height: 42px;
+}
+
+.four {
+    width: 80px;
+    height: 42px;
+}
+
+.five {
+    width: 59px;
+    height: 47px;
+}
+
+.sex {
+    width: 88px;
+    height: 45px;
+}
+
 @media (min-width: 768px) {
     .navmenu {
         height: 80px;
@@ -313,6 +412,27 @@ a {
     .hero {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/heroimgplanshit.jpg);
         background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/heroimgplanshit.jpg);
+    }
+    .fourlist {
+        display: flex;
+        gap: 30px;
+    }
+    .foursvgitem {
+        width: calc((100% - 30px) / 2);
+    }
+    .mainzaglav {
+        text-align: left;
+    }
+    .herotwo {
+        width: 100%;
+    }
+    .topfooterdivan {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .prodamdivan {
+        width: calc((100% - 30px) / 2);
     }
 }
 
@@ -334,5 +454,55 @@ a {
     letter-spacing: 0.06em;
     text-align: center;
     padding-top: 200px;
+    }
+    .mainzaglav {
+        text-align: left;
+    }
+    .fourlist {
+        max-width: 1170px;
+        flex-direction: row;
+        margin: 0 auto; 
+    }
+    .foursvgitem {
+        width: calc((100% - 90px) / 4);
+    }
+    .textandimg {
+        display: block;
+        width: 100%;
+        margin-bottom: 94px;
+    }
+    .threeimgzaglav {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        padding: 94px 0 50px;
+    }
+    .threeimg {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        gap: 30px;
+    }
+    .threeitem {
+        width: 370px;
+        
+    }
+    .ourteam {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        letter-spacing: 0.03em;
+        text-align: center;
+        padding: 94px 0 50px;
+    }
+    .topfooterdivan {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .prodamdivan {
+        max-width: 270px;
+        margin-bottom: 94px;
     }
 }
