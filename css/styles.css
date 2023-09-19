@@ -12,6 +12,7 @@
     --topfooterbg: #F5F4FA; 
     --bordercolor: #eee;
     --svgcolor: #AFB1B8;
+    --footersvgbackgr: #FFFFFF1A;
 }
 
 ul {
@@ -425,6 +426,184 @@ a {
     justify-content: center;
 }
 
+footer {
+    padding: 60px 15px 60px;
+    width: 100%;
+    background-color: var(--footercolor);
+}
+
+.ftcont {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footcont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flogo {
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--whitecolor);
+    margin-bottom: 20px;
+}
+
+.flogo span {
+    font-family: "Raleway";
+    color: var(--bluecolor);
+}
+
+.flist {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 8px;
+}
+
+.adrcord address {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--whitecolor);
+    font-style: normal;
+}
+
+.fcont {
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #FFFFFF99;
+}
+
+.connection {
+    padding: 53px 15px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.connecttext {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--whitecolor);
+    margin-bottom: 20px;
+}
+
+.connectlist {
+    display: flex;
+    gap: 10px;
+    
+}
+
+.connectitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--footersvgbackgr);
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.connectitem:hover {
+    background-color: var(--bluecolor);
+}
+
+.connectsvg {
+    width: 20px;
+    height: 20px;
+    fill: var(--whitecolor);
+}
+
+.forma {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.formtext {   
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--whitecolor);
+}
+
+.mailform {
+    width: 100%;
+}
+
+.email {
+    display: block;
+    margin: 0 auto;
+    width: 450px;
+    height: 50px;
+    padding: 15px 0 16px 15px;  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #FFFFFF99;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #FFFFFF4D;
+    background-color: var(--footercolor);
+}
+
+.subscribebtn {
+    width: 200px;
+    height: 50px;
+    background-color: var(--bluecolor); 
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: var(--whitecolor);
+    border: none;
+    margin: 0 auto;
+}
+
+.telega {
+    width: 24px;
+    height: 24px;
+    fill: var(--whitecolor);
+}
+
+
+
 @media (min-width: 768px) {
     .navmenu {
         height: 80px;
@@ -458,6 +637,18 @@ a {
     }
     .prodamdivan {
         width: calc((100% - 30px) / 2);
+    }
+    .planhetwidth {
+        display: flex;
+        justify-content: space-between;
+        gap: 165px;
+        
+    }
+    .connection {
+        padding: 5px 15px 60px;
+    }
+    .footcont {
+        padding-bottom: 60px;
     }
 }
 
@@ -533,5 +724,16 @@ a {
     }
     .prodamdivan {
         max-width: 270px;
+    }
+    .connectitem {
+        color: var(--bluecolor);
+    }
+    .ftcont {
+        min-width: 1600px;
+        flex: none;
+    }
+
+    .footcont, .connection {
+        padding: 0;
     }
 }
