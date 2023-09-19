@@ -34,7 +34,7 @@ a {
 
 .wrapper {
     width: 100%;
-    max-width: 1600px;
+    max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -542,12 +542,16 @@ footer {
 }
 
 .forma {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formnobtn {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    /* align-items: center;
-    justify-content: center; */
 }
 
 .formtext {   
@@ -560,9 +564,9 @@ footer {
     color: var(--whitecolor);
 }
 
-.mailform {
+/* .mailform {
     width: 100%;
-}
+} */
 
 .email {
     display: block;
@@ -593,7 +597,6 @@ footer {
     text-align: center;
     color: var(--whitecolor);
     border: none;
-    margin: 0 auto;
 }
 
 .telega {
@@ -723,17 +726,42 @@ footer {
         justify-content: center;
     }
     .prodamdivan {
-        max-width: 270px;
+        width: calc((100% - 90px) / 4);
+    }
+    .clientsitem {
+        width: calc((100% - 150px) / 6);
     }
     .connectitem {
         color: var(--bluecolor);
     }
     .ftcont {
-        min-width: 1600px;
-        flex: none;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
     }
-
+    .planhetwidth {
+        gap: 70px;
+    }
+    .flist {
+        align-items: flex-start;
+    }
+    .connection {
+        margin-top: 12px;
+    }
     .footcont, .connection {
         padding: 0;
+        align-items: flex-start;
+    }
+    .forma {
+        margin-top: 12px;
+        flex-direction: row;
+        gap: 12px;
+        align-items: flex-end;
+    }
+    .formnobtn {
+        align-items: flex-start;
+    }
+    .email {
+        width: 358px;
     }
 }
