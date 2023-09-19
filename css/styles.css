@@ -416,14 +416,22 @@ a {
 /* threediv  */
 .threediv {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: 4px;
     width: 100%;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.threetext {
+    color: var(--whitecolor);
+    text-transform: uppercase;  
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
 }
 
 footer {
@@ -705,14 +713,12 @@ footer {
     }
     .threeimg {
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         display: flex;
-        gap: 30px;
     }
     .threeitem {
         width: 370px;
         position: relative;
-        
     }
     .ourteam {
         font-size: 36px;
