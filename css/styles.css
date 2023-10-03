@@ -13,6 +13,10 @@
     --bordercolor: #eee;
     --svgcolor: #AFB1B8;
     --footersvgbackgr: #FFFFFF1A;
+    --transition03s: 0.3s;
+    --btnshadow: 0px 2px 2px 0px #0000001F, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001A;
+    --portimgshadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+    
 }
 
 ul {
@@ -30,7 +34,9 @@ a {
     font-family: 'Roboto', 'Raleway';
 }
 
-
+header {
+    border-bottom: 1px solid #ECECEC;
+}
 
 .wrapper {
     width: 100%;
@@ -158,6 +164,160 @@ a {
     transform: translateY(6px);
 }
 
+/* PORTFOLIO*/
+.port {
+    padding-top: 40px; 
+    padding-bottom: 60px;
+}
+
+.imglist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.btncont {
+    padding-top: 60px;
+}
+
+.buttonlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 8px;
+}
+
+.portbtn {
+    border: none;
+    padding: 6px 22px;
+    border-radius: 4px;
+    background-color: var(--topfooterbg);
+    color: var(--maintextcolor);
+    transition: var(--transition03s); 
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.portbtn:hover, .portbtn:focus {
+    box-shadow: var(--btnshadow);
+    background-color: var(--bluecolor);
+    color: var(--whitecolor);
+}
+
+.portitem {
+    width: 100%;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: var(--transition03s);
+}
+
+.portimg {
+    position: relative;
+    height: 294px;
+    overflow: hidden;
+}
+
+.portitem:nth-child(1) .portimg {
+    background-image: url(/images/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(2) .portimg {
+    background-image: url(/images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(3) .portimg  {
+    background-image: url(/images/img3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(4) .portimg  {
+    background-image: url(/images/img4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(5) .portimg  {
+    background-image: url(/images/img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(6) .portimg  {
+    background-image: url(/images/img6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(7) .portimg  {
+    background-image: url(/images/img7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(8) .portimg  {
+    background-image: url(/images/img8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portitem:nth-child(9) .portimg  {
+    background-image: url(/images/img9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.portimgtext {
+    padding: 20px 24px;
+    background-color: var(--whitecolor);
+}
+
+.portzaglav { 
+    margin-bottom: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+}
+
+.porttext {
+    color: var(--secondtextcolor);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+
+.slidetext {
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    position: absolute;
+    background-color: #2196F3E5;
+    color: var(--whitecolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 24px;
+    transition: var(--transition03s);
+}
+
+.portitem:hover, .portitem:focus {
+    box-shadow: var(--portimgshadow);
+}
+
+.portitem:hover  .slidetext, .portitem:focus .slidetext {
+    transform: translateY(0);
+}
+
+.slidescr {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+/* PORTFOLIO*/
 .hero {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/herophoneimg.jpg);
     background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/herophoneimg.jpg);
@@ -324,12 +484,23 @@ a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: var(--transition03s);
+    cursor: pointer;
+}
+
+.socialitem:hover {
+    background-color: var(--bluecolor);
+}
+
+.socialitem:hover .soci {
+    fill: var(--whitecolor);
 }
 
 .soci {
     fill: var(--svgcolor);
     width: 20px;
     height: 20px;
+    transition: var(--transition03s);
 }
 
 .clientshead {
@@ -435,13 +606,12 @@ a {
 }
 
 footer {
-    padding: 60px 15px 60px;
+    padding: 60px 0 60px;
     width: 100%;
     background-color: var(--footercolor);
 }
 
 .ftcont {
-    padding: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -554,12 +724,14 @@ footer {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .formnobtn {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
 }
 
 .formtext {   
@@ -579,7 +751,8 @@ footer {
 .email {
     display: block;
     margin: 0 auto;
-    width: 450px;
+    width: 100%;/* изменения здесь */
+    max-width: 450px;
     height: 50px;
     padding: 15px 0 16px 15px;  
     font-size: 16px;
@@ -601,6 +774,7 @@ footer {
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
+    border-radius: 4px;
     letter-spacing: 0.06em;
     text-align: center;
     color: var(--whitecolor);
@@ -624,6 +798,14 @@ footer {
     }
     .burgermenu {
         display: none;
+    }
+    .btncont {
+
+        display: flex;
+        justify-content: center;
+    }
+    .port {
+        padding-top: 30px;
     }
     .hero {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/heroimgplanshit.jpg);
@@ -653,13 +835,18 @@ footer {
         display: flex;
         justify-content: space-between;
         gap: 165px;
-        
     }
     .connection {
         padding: 5px 15px 60px;
     }
     .footcont {
         padding-bottom: 60px;
+    }
+    .imglist {
+        flex-direction: row;
+    }
+    .portitem {
+        width: calc((100% - 30px) / 2);
     }
 }
 
@@ -668,6 +855,10 @@ footer {
     .contacts {
         flex-direction: row;
         gap: 30px;
+    }
+    .port {
+        padding-top: 50px;
+        padding-bottom: 94px;
     }
     .hero {
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/images/herodesktop.jpg);
@@ -748,6 +939,12 @@ footer {
     .planhetwidth {
         gap: 70px;
     }
+    .imglist {
+        flex-direction: row;
+    }
+    .portitem {
+        width: calc((100% - 60px) / 3);
+    }
     .flist {
         align-items: flex-start;
     }
@@ -759,12 +956,14 @@ footer {
         align-items: flex-start;
     }
     .forma {
+        max-width: 570px;
         margin-top: 12px;
         flex-direction: row;
         gap: 12px;
         align-items: flex-end;
     }
     .formnobtn {
+        max-width: 358px;
         align-items: flex-start;
     }
     .email {
