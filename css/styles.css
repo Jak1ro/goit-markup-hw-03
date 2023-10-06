@@ -188,6 +188,7 @@ header {
 }
 
 .portbtn {
+    cursor: pointer;
     border: none;
     padding: 6px 22px;
     border-radius: 4px;
@@ -787,7 +788,57 @@ footer {
     fill: var(--whitecolor);
 }
 
+.registrform {
+    padding: 40px 0 40px;
+    width: calc(100% - 30px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    background-color: var(--whitecolor);
+}
 
+.regtext {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+
+.formgeo {
+    width: calc(100% - 80px);
+    max-width: 370px;
+    padding: 10px 42px;
+    outline: none;
+    border: 1px solid #21212133;
+    border-radius: 4px;
+    cursor: pointer; 
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.commentform {
+    padding: 12px 0 0 16px;
+}
+
+.acceptform {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+    background-color: var(--bluecolor);
+    color: var(--whitecolor);
+    padding: 10px 55px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
 @media (min-width: 768px) {
     .navmenu {
